@@ -129,7 +129,7 @@ def fig_baselines(cwru, base):
     ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=9); ax.invert_yaxis()
     ax.set_xlabel("macro-$F_1$"); ax.set_xlim(0, 1.0)
     ax.set_title("CWRU: matched 11-feature budget baselines")
-    ax.legend(fontsize=9, loc="lower right")
+    ax.legend(fontsize=9, loc="upper right")
     _save(fig, "fig5_baselines")
 
 
