@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "DSGE-Cepstral-FIR-Classification-code-supplement: reproduction package for Cepstral FIR-Robust Classification"
+authors:
+  - family-names: Zabolotnii
+    given-names: Serhii V.
+    affiliation: "Cherkasy State Business College, Cherkasy, Ukraine"
+license: MIT
+repository-code: "https://github.com/SZabolotnii/DSGE-Cepstral-FIR-Classification-code-supplement"
+preferred-citation:
+  type: article
+  title: "Cepstral FIR-Robust Classification: A Homomorphic-Deconvolution Descriptor in Space with a Generating Element"
+  authors:
+    - family-names: Zabolotnii
+      given-names: Serhii V.
+  year: 2026
+  notes: "Preprint, under review (EURASIP Journal on Advances in Signal Processing)."

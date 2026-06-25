@@ -1,0 +1,126 @@
+{
+  "config": {
+    "dataset": "CWRU 12k-DE 10-class",
+    "seed": 2026,
+    "n_sens_splits": 8,
+    "baseline": {
+      "n_fft": 256,
+      "hop": 128,
+      "window": "hann",
+      "cep_eps": 1e-08
+    },
+    "headline_ridge": 0.01,
+    "profile_eps": 1e-12,
+    "note": "OAT sensitivity; hyperparameters never tuned on test metric"
+  },
+  "dsp_sensitivity": {
+    "baseline": {
+      "config": {
+        "n_fft": 256,
+        "hop": 128,
+        "window": "hann",
+        "cep_eps": 1e-08
+      },
+      "gap_mean": 0.09235002464146724,
+      "gap_std": 0.011383827279790487,
+      "gap_min": 0.07310277598804138,
+      "sign_stable": true
+    },
+    "nfft128": {
+      "config": {
+        "n_fft": 128,
+        "hop": 64,
+        "window": "hann",
+        "cep_eps": 1e-08
+      },
+      "gap_mean": 0.034020256378611315,
+      "gap_std": 0.009386538977929864,
+      "gap_min": 0.023487525792873165,
+      "sign_stable": true
+    },
+    "nfft512": {
+      "config": {
+        "n_fft": 512,
+        "hop": 256,
+        "window": "hann",
+        "cep_eps": 1e-08
+      },
+      "gap_mean": 0.1582509186333695,
+      "gap_std": 0.017340754943176138,
+      "gap_min": 0.12931205411063673,
+      "sign_stable": true
+    },
+    "hop_quarter": {
+      "config": {
+        "n_fft": 256,
+        "hop": 64,
+        "window": "hann",
+        "cep_eps": 1e-08
+      },
+      "gap_mean": 0.09481575242599852,
+      "gap_std": 0.010920435659595563,
+      "gap_min": 0.0739484231067915,
+      "sign_stable": true
+    },
+    "window_hamming": {
+      "config": {
+        "n_fft": 256,
+        "hop": 128,
+        "window": "hamming",
+        "cep_eps": 1e-08
+      },
+      "gap_mean": 0.1603257525646013,
+      "gap_std": 0.008491573901398758,
+      "gap_min": 0.14460912955330774,
+      "sign_stable": true
+    },
+    "cepeps_1e-6": {
+      "config": {
+        "n_fft": 256,
+        "hop": 128,
+        "window": "hann",
+        "cep_eps": 1e-06
+      },
+      "gap_mean": 0.1083329522827911,
+      "gap_std": 0.011562140456831715,
+      "gap_min": 0.08997982774211155,
+      "sign_stable": true
+    },
+    "cepeps_1e-10": {
+      "config": {
+        "n_fft": 256,
+        "hop": 128,
+        "window": "hann",
+        "cep_eps": 1e-10
+      },
+      "gap_mean": 0.09176203573953412,
+      "gap_std": 0.011306258990120714,
+      "gap_min": 0.07240104991249241,
+      "sign_stable": true
+    }
+  },
+  "ridge_sensitivity": {
+    "0.001": {
+      "gap_mean": 0.08833203879013032,
+      "gap_std": 0.011743896715781804,
+      "sign_stable": true,
+      "cond_F_median": 2206.520945197324,
+      "cond_F_max": 4315.5889535024335
+    },
+    "0.01": {
+      "gap_mean": 0.09235002464146724,
+      "gap_std": 0.011383827279790487,
+      "sign_stable": true,
+      "cond_F_median": 221.5520945197407,
+      "cond_F_max": 432.4588953503241
+    },
+    "0.1": {
+      "gap_mean": 0.09303120312718449,
+      "gap_std": 0.010523275153545503,
+      "sign_stable": true,
+      "cond_F_median": 23.055209451974292,
+      "cond_F_max": 44.145889535033405
+    }
+  },
+  "all_signs_stable": true
+}
